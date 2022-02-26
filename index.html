@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+
+    <header class="header">
+        <h1>Border-Radius Preview</h1>
+        <span id="line"><hr></span>
+        <p>Tired of testing border-radius? Don't worry! <br> We're going to save you!</p>
+    </header>
+
+    <main class="main">
+        <h2>Value: <span id="percent-value"></span> %</h2>
+        <input type="range" min="0" max="50" id="slider" value="25">
+
+        <div class="preview-container">
+            <span id="preview-object"></span>
+        </div>
+
+        <div class="result">
+            <button id="button-cta" onclick="getCss()" >GET CSS</button>
+            <span id="css-code" class="copy-code hiden" onclick="copyCode()"></span>
+            <span id="tooltip" class="tooltip hide">Click to copy</span>
+        </div>
+
+    </main>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
